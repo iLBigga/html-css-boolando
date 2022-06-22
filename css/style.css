@@ -32,36 +32,36 @@ img {
 
 
 
-.main__nav, .main_nav_list ul, .main_nav_icon ul{
+.main_header .main__nav, .main_nav_list ul, .main_nav_icon ul{
     display: flex;
 }
 
-.main__header {
+.main_header {
     background-color: #FF6900;
     padding: 20px;
 }
 
-.main__nav {
+.main_header .main__av {
     background-color: #FF6900;
     justify-content: space-between;
 } 
 
-.main_nav_list {
+.main_header .main_nav_list {
     font-size: 17px;
     font-weight: bold;
 
 }
 
-.main_nav_list ul{
+.main_header .main_nav_list ul{
     gap: 10px;
 }
 
-.main_nav_logo img{
+.main_header .main_nav_logo img{
     width: 100px;
     height: 100 px;
 }
 
-.main_nav_icon ul{
+.main_header .main_nav_icon ul{
     width: 80px;
     gap: 10px;
 }
@@ -71,29 +71,29 @@ img {
 /* REGOLE MAIN  */
 
 
-.row {
+.main .row {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -20px;
 }
 
-.col-3 {
+.main .col-3 {
     width: calc(100% / 3);
     padding: 20px;   
 }
 
 
 
-/* REGOLE CARD */
+/* REGOLE MAIN CARD */
 
 
 
-.card {
+.main .card {
     position: relative;
 }
 
 
-.card_favorite::after {
+.main .card_favorite::after {
     content: ' \2665';
     background-color: white;
     position: absolute;
@@ -105,49 +105,49 @@ img {
     font-size: 30px;
 }
 
-.card_favorite:hover {
+.main .card_favorite:hover {
     color: red;
 }
 
 
-.card_banner{
+.main .card_banner{
     position: absolute;
     left: 0px;
     bottom: 40px;
     color: white;
 }
 
-.card_discount {
+.main .card_discount {
     background-color: red;
     padding: 0 10px;
 }
 
-.card_ecotag {
+.main .card_ecotag {
     background-color: green;
     padding: 0 10px;
 }
 
 
-.card_title {
+.main .card_title {
     font-weight: 700;
 }
 
-.card_price {
+.main .card_price {
     color: red;
     font-weight: 500;
 }
 
-.card_price > span {
+.main .card_price > span {
     text-decoration: line-through;
     color: black;
 }
 
 
-.card_banner, .card_favorite::after {
+.main .card_banner, .card_favorite::after {
     z-index: 999;
 }
 
-.card_img_2 {
+.main .card_img_2 {
     position: absolute;
     z-index: -1;
     top: 0;
@@ -156,7 +156,7 @@ img {
     bottom: 0;
 }
 
-.card:hover .card_img_2{
+.main .card:hover .card_img_2{
     z-index: 2;
 }
 
@@ -172,22 +172,22 @@ img {
     color: white;
 }
 
-.main_nav_footer {
+.main_footer .main_nav_footer {
     display: flex;
     justify-content: space-between;
 }
 
-.main_nav_footer_list {
+.main_footer .main_nav_footer_list {
     display: flex;
     gap: 20px;
     padding-top: 10px;
 }
 
-.footer_social_list ol{
+.main_footer .footer_social_list ol{
     display: flex;
 }
 
-.main_nav_footer .footer_social_list li{
+.main_footer .main_nav_footer .footer_social_list li{
     width: 40px;
     padding: 10px 5px;
 }
