@@ -71,5 +71,60 @@ img {
     padding: 20px;
 }
 
+/* REGOLE CARD */
+
+.card {
+    position: relative;
+}
+
+.card_favorite {
+    background-color: white;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 30px;
+    right: 0;
+    text-align: center;
+    
+    font-size: 30px;
+}
+
+.card_banner{
+    position: absolute;
+    left: 0px;
+    bottom: 40px;
+    color: white;
+}
+
+.card_discount {
+    background-color: red;
+    padding: 0 10px;
+}
+
+.card_ecotag {
+    background-color: green;
+    padding: 0 10px;
+}
+
+.card_brand {
+
+}
+
+.card_title {
+    font-weight: 700;
+}
+
+.card_price {
+    color: red;
+    font-weight: 500;
+}
+
+.card_price > span {
+    text-decoration: line-through;
+    color: black;
+}
+
+
+
 /* DEBUG */
 
