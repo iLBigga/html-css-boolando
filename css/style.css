@@ -127,8 +127,21 @@ img {
 }
 
 
-.card_banner, .card_favorite {
+.card_banner, .card_favorite::after {
     z-index: 999;
+}
+
+.card_img_2 {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.card:hover .card_img_2{
+    z-index: 2;
 }
 
 /* REGOLE FOOTER */
